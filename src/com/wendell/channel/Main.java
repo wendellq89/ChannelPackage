@@ -50,7 +50,7 @@ public class Main extends Application {
         Label labTip = (Label)root.lookup("#labTip");
         pi.setProgress(-1);
         pi.setVisible(false);
-        labTip.setText("选择已加固但是未签名的apk");
+        labTip.setText("选择未签名的apk");
     }
 
 
