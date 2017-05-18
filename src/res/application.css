@@ -1,0 +1,8 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#labTip{
+	-fx-text-fill: #33ccff;
+}
+.root{
+	-fx-background-color: #cccccc;
+}

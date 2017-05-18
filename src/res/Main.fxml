@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300" prefWidth="400" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wendell.channel.MainController">
+    <children>
+        <Button fx:id="btnPackage" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="208.0" mnemonicParsing="false" onAction="#generateChannelApkFile" text="生成渠道" />
+        <Label fx:id="labTip" alignment="TOP_CENTER" layoutY="7.0" prefHeight="15.0" prefWidth="402.0" textOverrun="CLIP" />
+        <Label layoutX="125.0" layoutY="212.0" text="输入渠道信息" />
+        <TextArea fx:id="taChannel" layoutX="229.0" layoutY="186.0" prefHeight="67.0" prefWidth="161.0" text="360&#10;qq&#10;wandoujia&#10;baidu" />
+        <Button fx:id="btnChannel" layoutX="33.0" layoutY="128.0" mnemonicParsing="false" onAction="#signAPKFile" text="签名apk" />
+        <ProgressIndicator fx:id="piTip" layoutX="115.0" layoutY="112.0" prefWidth="21.0" progress="0.0" />
+      <Button fx:id="btnSelectKey" layoutX="31.0" layoutY="34.0" mnemonicParsing="false" onAction="#selectKey" prefHeight="23.0" prefWidth="64.0" text="选择签名" />
+      <TextField fx:id="tfKeyPwd" layoutX="229.0" layoutY="34.0" />
+      <Label layoutX="170.0" layoutY="38.0" prefHeight="15.0" prefWidth="53.0" text="签名密码" />
+      <Label layoutX="170.0" layoutY="77.0" prefHeight="15.0" prefWidth="53.0" text="别名密码" />
+      <TextField fx:id="tfAliasPwd" layoutX="229.0" layoutY="73.0" />
+      <TextField fx:id="tfAliasName" layoutX="75.0" layoutY="73.0" prefHeight="23.0" prefWidth="72.0" />
+      <Label layoutX="33.0" layoutY="77.0" text="别名" />
+    </children>
+</AnchorPane>
