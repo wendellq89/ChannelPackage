@@ -255,6 +255,9 @@ public class V1SchemeUtil {
         try {
             jarFile = new JarFile(file);
             JarEntry manifestEntry = jarFile.getJarEntry("META-INF/MANIFEST.MF");
+            if (manifestEntry == null) {
+				return false;
+			}
             JarEntry sfEntry = null;
             Enumeration<JarEntry> entries = jarFile.entries();
             while (entries.hasMoreElements()) {
